@@ -35,9 +35,9 @@ class State:
             if h < best_h: 
                 best_h = h
             if h == best_h:
-                best_neighbors.append(i)
+                bestNeighbors.append(i)
 
         if len(bestNeighbors) > 0: 
-            random_index = random.randint(0, len(best_neighbors) - 1)
-            self.state[best_neighbors[random_index][0]] = best_neighbors[random_index][1]
+            randomIndex = random.randint(0, len(best_neighbors) - 1)
+            self.state[bestNeighbors[randomIndex][0]] = bestNeighbors[randomIndex][1]
         return State(self.state) 
