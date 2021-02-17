@@ -38,6 +38,6 @@ class State:
                 bestNeighbors.append(i)
 
         if len(bestNeighbors) > 0: 
-            randomIndex = random.randint(0, len(best_neighbors) - 1)
+            randomIndex = random.randint(0, len(bestNeighbors) - 1)
             self.state[bestNeighbors[randomIndex][0]] = bestNeighbors[randomIndex][1]
         return State(self.state) 
